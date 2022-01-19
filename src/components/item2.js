@@ -1,4 +1,4 @@
-export default function Item2({image}) {
+export default function Item2({image, name}) {
 
 
     console.log(image)
@@ -7,12 +7,12 @@ export default function Item2({image}) {
   
   
         <div>
-            <div className="container">
+            <div className="container" style={{backgroundColor: '#FFFBF6'}}>
                 <div className="row">
                     <p>Marque : marque</p>
-                    <h2>tablette</h2>
+                    <h2>{name}</h2>
                 </div>
-          <div className="row" style={{backgroundColor: 'gray', maxWidth: '1092px', maxHeight: '595px', margin: 'auto'}}>
+          <div className="row" style={{backgroundColor: '#F9ECE1', maxWidth: '1092px', maxHeight: '595px', margin: 'auto'}}>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

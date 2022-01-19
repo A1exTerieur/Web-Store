@@ -1,7 +1,16 @@
 import './AjoutPanier.css'
+import { useState } from 'react';
 
 export default function AjoutPanier({Produit}) {
-
+/*    const [inputProduit, setInputProduit] = useState();
+    const [panier, setPanier] = useState([]);
+    function add(){
+        if(inputProduit.trim().length === 0) return null;
+        let tmp = [...panier];
+        tmp.push(inputProduit.trim());
+        setPanier(tmp);
+        setInputProduit("");
+    }  onClick={add}*/
     return (
         <div className="container">
             <div style={{marginTop: '50px'}}>
@@ -14,7 +23,7 @@ export default function AjoutPanier({Produit}) {
                 </select>
             </div>
             <div className="row">
-            <button type="button" id='btn' class="btn btn-primary btn-lg btn-block">Ajouter au panier</button>
+            <button type="button"  id='btn' class="btn btn-primary btn-lg btn-block">Ajouter au panier</button>
             </div>
             <div className="row">
             <button type="button"id='btn' class="btn btn-primary btn-lg btn-block">Acheter cet article</button>
