@@ -20,6 +20,7 @@ export default function Item({image}) {
         <div class="col-8" style={{backgroundColor:'#FFF8F2'}}>
         info
         </div>
+        
       </div>
 
   );

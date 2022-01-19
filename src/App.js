@@ -6,9 +6,9 @@ import Todos from './components/pages/Todos';
 import NotFound from './components/pages/NotFound';
 import Jeuxvideo from './components/pages/Jeuxvideo'
 import Informatique from './components/pages/Informatique'
-
+import Produit from './components/pages/Produit'
 const App = () => {
-
+  
 
   return (
     <div className="container">
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Jeuxvideo" element={<Jeuxvideo />} />
           <Route path="/Informatique" element={<Informatique />} />
+          <Route path="/Produit" element={<Produit />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </div>
