@@ -1,0 +1,13 @@
+
+  .btn-primary  {
+      background-color: #E0730E;
+      border: 1px solid #E0730E;
+  }
+  .btn-primary:focus,.btn-primary:hover, .btn-primary:active{
+    background-color: #DB883B;
+    border: 1px solid #E0730E;
+  }
+  #btn{
+      border-radius: 30px;
+  }
+  
