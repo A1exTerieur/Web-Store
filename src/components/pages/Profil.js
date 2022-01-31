@@ -4,7 +4,9 @@ const Profil = () => {
 
     return(
         <div className="Profil">
-            
+            <div className="row">
+                
+            </div>
         </div>
     )
 }
