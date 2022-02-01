@@ -1,7 +1,8 @@
 import React from 'react';
 
 import ImageProfil from '../../image/profil.png';
-import ImagePrise from '../../image/prise.png'
+import ImagePrise from '../../image/prise.png';
+import ImageTablette from '../../image/tablette.png';
 
 const Profil = () => {
 
@@ -11,7 +12,7 @@ const Profil = () => {
                 <h1 align="center">Alexandre T</h1>
             </div>
 			<div className="row ">
-				<div class="d-flex p-2" style={{width:"50px",margin: 'auto'}}>
+				<div class="d-flex justify-content-center">
                 <img src={ImageProfil}  height="300" width="300"></img>
                 </div>
             </div>
@@ -29,25 +30,35 @@ const Profil = () => {
   <input type="text" class="form-control" placeholder="alexandre.t@banana.fr" aria-label="mail" aria-describedby="basic-addon1" value="alexandre.t@banana.fr"></input>
 </div>
    <h3 align="center">Commandes passées</h3>
-   <hr/>
-   
-           <h5 align="center">Prise</h5>
-                <p>Matériaux de qualité, résistants et durables.<br/>Testé et approuvé,
-                petit et léger permet une charge ultra rapide.</p>
-                <div class="d-flex p-2" style={{width:"50px",}}>
-                <img src={ImagePrise}  height="300" width="300"></img>
-                </div>
-                <p ><b>28/08/2022</b></p>
-   <hr/>
-   
-           <h5 align="center">Prise</h5>
-                <p>Matériaux de qualité, résistants et durables.<br/>Testé et approuvé,
-                petit et léger permet une charge ultra rapide.</p>
-                <div class="d-flex p-2" style={{width:"50px",}}>
-                <img src={ImagePrise}  height="300" width="300"></img>
-                </div>
-                <p ><b>28/08/2022</b></p>
-                
+   <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+                <th scope="col">Article</th>
+                <th scope="col">Aperçu</th>
+                <th scope="col">Date</th>
+                <th scope="col">Prix</th>
+              </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Prise</td>
+            <td><img src={ImagePrise} height='50' width='50'/></td>
+            <td>23/02/2022</td>
+            <td>29€</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Tablette</td>
+            <td><img src={ImageTablette} height='50' width='50'/></td>
+            <td>22/08/2022</td>
+            <td>199€</td>
+          </tr>
+
+
+        </tbody>
+        </table>
             </div>
         </div>
     )
